@@ -31,7 +31,7 @@ public class Subscriber extends Thread {
                 Message message = consumer.receive(1);
                 if (message instanceof TextMessage) {
                     TextMessage text = (TextMessage) message;
-                    System.out.println(this.getName() + " - Received message : " + text.getText());
+                    System.out.println(this.getName() + " - Received message: " + text.getText());
                 }
             }
         } catch (JMSException e) {
